@@ -1,26 +1,16 @@
-import React from 'react';
+import React, {Component} from 'react';
+import Products from './Products';
+import JumboTronComponent from './JumboTronComponent';
+import { Button } from 'react-bootstrap';
+import Rating from './Rating';
 import logo from './logo.svg';
 import './App.css';
-
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      return (
+  <div>
+   <JumboTronComponent /> 
+ <Products />
+  </div>
   );
 }
-
 export default App;
